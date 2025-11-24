@@ -168,7 +168,7 @@ onUnmounted(() => {
               <!-- Forecast List (Horizontal Grid) -->
               <div class="grid grid-cols-5 gap-1 w-full -mx-2 px-1">
                 <div 
-                  v-for="(day, idx) in currentCity.forecast.slice(0, 5)" 
+                  v-for="day in currentCity.forecast.slice(0, 5)" 
                   :key="day.date"
                   class="flex flex-col items-center justify-start space-y-2"
                 >
